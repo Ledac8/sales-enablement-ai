@@ -70,7 +70,7 @@ if prompt := st.chat_input("Ask a question about our products..."):
             User Question: {prompt}
             """
             
-            response = model.generate_content(full_prompt)
+           response = model.generate_content(full_prompt)
             st.markdown(response.text)
             st.session_state.messages.append({"role": "assistant", "content": response.text})
             
