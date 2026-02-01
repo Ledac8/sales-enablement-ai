@@ -59,7 +59,7 @@ if prompt := st.chat_input("Ask a question about our products..."):
     # Generate Response
     with st.chat_message("assistant"):
         try:
-           model = genai.GenerativeModel("gemini-pro")
+           model = genai.GenerativeModel("gemini-1.5-pro")
             
             # This is the "Magic" prompt that tells the AI how to behave
            full_prompt = f"""
