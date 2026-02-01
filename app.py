@@ -4,7 +4,7 @@ from pypdf import PdfReader
 
 # 1. Setup - Replace with your key or use st.secrets for security
 # Get your key at: https://aistudio.google.com/
-GOOGLE_API_KEY = "YOUR_GEMINI_API_KEY_HERE"
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=GOOGLE_API_KEY)
 
 st.set_page_config(page_title="Sales Engine Prototype", layout="wide")
