@@ -71,8 +71,8 @@ if prompt := st.chat_input("Ask a question about our products..."):
             """
             
            response = model.generate_content(full_prompt)
-            st.markdown(response.text)
-            st.session_state.messages.append({"role": "assistant", "content": response.text})
+           st.markdown(response.text)
+           st.session_state.messages.append({"role": "assistant", "content": response.text})
             
         except Exception as e:
             st.error(f"Error: {str(e)}")
