@@ -63,8 +63,8 @@ if prompt := st.chat_input("Ask a question about our products..."):
             
             # This is the "Magic" prompt that tells the AI how to behave
            full_prompt = f"""
-            You are a Sales Enablement Assistant. Use the following context to answer the question.
-            If the answer isn't in the context, say you don't know based on current docs.
+           You are a Sales Enablement Assistant. Use the following context to answer the question.
+           If the answer isn't in the context, say you don't know based on current docs.
             
             Context: {context}
             User Question: {prompt}
